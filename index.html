@@ -1,21 +1,22 @@
 <html>
-<script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-<body>
-	<header>
-		<h1>Portfolio</h1>
-		<div hx-trigger ="click"
-			 hx-target="#content-div"
-			 hx-swap="innerHTML"
-		>
-			<button hx-get="pages/home.html">
-				About
-			</button>
-			<button hx-get="pages/about.html">
-				Home
-			</button>
-		</div>
-	</header>
+	<script
+		src="https://unpkg.com/htmx.org@1.9.10"
+		integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+		crossorigin="anonymous"
+	></script>
+	<body>
+		<header>
+			<h1>Portfolio</h1>
+			<div
+				hx-trigger="click"
+				hx-target="#content-div"
+				hx-swap="innerHTML"
+			>
+				<button hx-get="pages/home.html">About</button>
+				<button hx-get="pages/about.html">Home</button>
+			</div>
+		</header>
 
-	<div id="content-div"></div>
-</body>
+		<div id="content-div"></div>
+	</body>
 </html>
